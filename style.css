@@ -1,11 +1,11 @@
 :root{
-    --text-color: #2874A6;  
-    --card-front-color: #5b99c2;
-    --car-back-color: #fafafa;
+    --text-color: #a75035;  
+    --card-front-color: #bd7a60;
+    --card-back-color: #fafafa;
 }
 
 body {
-    background: url();
+    background: url('/tmp/guest-ds71sd/Downloads/fundo-de-dia-de-africa-desenhado-a-mao_23-2149348213.avif');
     font-family: Bai jamjuree;
 }
 
@@ -29,13 +29,13 @@ body {
     text-align: center;
     /* background-color: aquamarine; */
     height: 100%;
-    transform-style:preserve-3d ;
+    transform-style:preserve-3d;
     transition: transform 300ms ease-in-out;
 }
 
 .cartao_conteudo h3 {
-    color: aquamarine;
-    border: 1px solid var(--card-front-color);
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
     text-align: left;
     padding: 0.5rem;
     position: absolute;
@@ -52,22 +52,22 @@ body {
     font-size: 1.4vw;
 }
 
-.cartao_conteudo_pergunta p {
+.cartao__conteudo__pergunta p {
     color: var(--text-color);
     font-weight: 500;
 }
 
-.cartao_conteudo_resposta p {
+.cartao__conteudo__resposta p {
     color: var(--car-back-color);
     font-weight: 700;
 }
 
-.cartao.active  .cartao_conteudo {
+.cartao.active .cartao__conteudo {
     transform: rotateY(180deg);
 }
 
-.cartao_conteudo_pergunta,
-.cartao_conteudo_resposta {
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta {
     backface-visibility: hidden;
     position: absolute;
     height: 100%;
@@ -75,15 +75,15 @@ body {
     box-sizing: border-box;
 }
 
-.cartao_conteudo_resposta {
+.cartao__conteudo__resposta {
     transform: rotateY(180deg);
-    background-color: #6174A0 (0, 244, 91, 0.2);
+    background-color: #352319 (0, 244, 91, 0.2);
     border: 4px solid var(--car-back-color);
 }
 
 footer {
-    background-color: black;
-    color: azure;
+    background-color: rgb(153, 87, 49);
+    color: rgb(255, 255, 255);
     position: fixed;
     bottom: 0;
     width: 100%;
